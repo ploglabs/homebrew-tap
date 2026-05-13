@@ -5,21 +5,21 @@
 class Molly < Formula
   desc "Terminal-native realtime chat client for Discord"
   homepage "https://github.com/ploglabs/molly-terminal"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ploglabs/molly-terminal/releases/download/v0.1.3/molly-terminal_0.1.3_darwin_amd64.tar.gz"
-      sha256 "a6b22fd153dfe2cbf0376b48513d595f0324eea30722f5500e4b1c402202ff41"
+      url "https://github.com/ploglabs/molly-terminal/releases/download/v0.1.4/molly-terminal_0.1.4_darwin_amd64.tar.gz"
+      sha256 "c5794d075e4ec68a88a80d81afdda10feef7f7f007360781edc446a19780f615"
 
       define_method(:install) do
         bin.install "molly"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ploglabs/molly-terminal/releases/download/v0.1.3/molly-terminal_0.1.3_darwin_arm64.tar.gz"
-      sha256 "937268ad0cfcf4249e6cce3e6dfe3e7737c9b534d2afe3dc19766042c4459a2f"
+      url "https://github.com/ploglabs/molly-terminal/releases/download/v0.1.4/molly-terminal_0.1.4_darwin_arm64.tar.gz"
+      sha256 "6fa5cb3e70d1b2fb605f56b0c7c4fa7439d714778cd886481426a5abbf57b6c5"
 
       define_method(:install) do
         bin.install "molly"
@@ -29,15 +29,15 @@ class Molly < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ploglabs/molly-terminal/releases/download/v0.1.3/molly-terminal_0.1.3_linux_amd64.tar.gz"
-      sha256 "b3330a9385d0a123fa637b019ac29ca5624699b17ee27d87279671de92203f94"
+      url "https://github.com/ploglabs/molly-terminal/releases/download/v0.1.4/molly-terminal_0.1.4_linux_amd64.tar.gz"
+      sha256 "fe51c883a16a96e26f8fa4f33ca792493516013117a9a67e54ab16cd549d5c69"
       define_method(:install) do
         bin.install "molly"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ploglabs/molly-terminal/releases/download/v0.1.3/molly-terminal_0.1.3_linux_arm64.tar.gz"
-      sha256 "e85ef9cd4dd39d7750e26dae6f1fbd567578de01a4a8f9003d33e9fa31dddf8d"
+      url "https://github.com/ploglabs/molly-terminal/releases/download/v0.1.4/molly-terminal_0.1.4_linux_arm64.tar.gz"
+      sha256 "3a0c4bc0ba89144f299c8b8c53967c78b96d4e9c5bf9b42e51abbadb99814c89"
       define_method(:install) do
         bin.install "molly"
       end
