@@ -11,7 +11,7 @@ class Molly < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/ploglabs/molly-terminal/releases/download/v0.1.8/molly-terminal_0.1.8_darwin_amd64.tar.gz"
-      sha256 "00f159432d7062a7b3c290f075a9845b8cf10529effb9d6c3acc8952747c4d37"
+      sha256 "ca50b8db206db18947010c194cd17bfcbe934ddef00e03eb0cc23c93983f6fa5"
 
       define_method(:install) do
         bin.install "molly"
@@ -19,7 +19,7 @@ class Molly < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/ploglabs/molly-terminal/releases/download/v0.1.8/molly-terminal_0.1.8_darwin_arm64.tar.gz"
-      sha256 "f28bc4884151e366ad433f8eebaae49c8d4f09c858bb05a59bbfb9aee6fa9534"
+      sha256 "ac434800f2aaa00e521e9ad08f784d11f0cab1ddab29001fae58df06d9643163"
 
       define_method(:install) do
         bin.install "molly"
@@ -30,14 +30,14 @@ class Molly < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/ploglabs/molly-terminal/releases/download/v0.1.8/molly-terminal_0.1.8_linux_amd64.tar.gz"
-      sha256 "3832e38406348b3d571d187db8c20cb73f5bebd3af838cdd83ac59737d44e102"
+      sha256 "34c2b79703f00fcfd730c760557fd5e122f2a929d693cbcc474979ce7b0f09ba"
       define_method(:install) do
         bin.install "molly"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/ploglabs/molly-terminal/releases/download/v0.1.8/molly-terminal_0.1.8_linux_arm64.tar.gz"
-      sha256 "7459be2a354cb99091ff0596a2a62aa8ab0fa86b5bee897289c8a3aad7c3cb31"
+      sha256 "37749c0d4ef750ea0537b3f88c704a14791f5fea18f76eb8cb2c97ddf7e09093"
       define_method(:install) do
         bin.install "molly"
       end
