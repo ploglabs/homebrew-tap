@@ -5,21 +5,21 @@
 class MollyDiscordRelay < Formula
   desc "Discord relay server for terminal-native realtime chat"
   homepage "https://github.com/ploglabs/molly-discord-relay"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ploglabs/molly-discord-relay/releases/download/v0.1.0/molly-discord-relay_0.1.0_darwin_amd64.tar.gz"
-      sha256 "aecac8f307eb80bdddb4b47150b59ea77dc60fad59f60e834b3fc027d2caa01f"
+      url "https://github.com/ploglabs/molly-discord-relay/releases/download/v0.1.1/molly-discord-relay_0.1.1_darwin_amd64.tar.gz"
+      sha256 "b150d5371521e92b3ae8e34bf60d1c1f752c3ea661e415f6be3711051ab4760c"
 
       define_method(:install) do
         bin.install "molly-discord-relay"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ploglabs/molly-discord-relay/releases/download/v0.1.0/molly-discord-relay_0.1.0_darwin_arm64.tar.gz"
-      sha256 "9930e3c3c69f5c95dac96d01a34564cfacb944c73726cb9b8e320c936b34389a"
+      url "https://github.com/ploglabs/molly-discord-relay/releases/download/v0.1.1/molly-discord-relay_0.1.1_darwin_arm64.tar.gz"
+      sha256 "db31da47da9fa147b66011d9b736fb518adb65f65ffad0de34293bcf5b319b09"
 
       define_method(:install) do
         bin.install "molly-discord-relay"
@@ -29,15 +29,15 @@ class MollyDiscordRelay < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ploglabs/molly-discord-relay/releases/download/v0.1.0/molly-discord-relay_0.1.0_linux_amd64.tar.gz"
-      sha256 "5b14cc601b67fbfd4165ea2eb540d11162edd2812f25621ac907d6e7bc7a33c2"
+      url "https://github.com/ploglabs/molly-discord-relay/releases/download/v0.1.1/molly-discord-relay_0.1.1_linux_amd64.tar.gz"
+      sha256 "6fe946820132de3229a5741487e14075171dd15efbedcf94da9aefdb7742ff58"
       define_method(:install) do
         bin.install "molly-discord-relay"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ploglabs/molly-discord-relay/releases/download/v0.1.0/molly-discord-relay_0.1.0_linux_arm64.tar.gz"
-      sha256 "7321bea42c0f63b8d61a72f113b2992026702dbb296ef4e0c45c778cf874fb6b"
+      url "https://github.com/ploglabs/molly-discord-relay/releases/download/v0.1.1/molly-discord-relay_0.1.1_linux_arm64.tar.gz"
+      sha256 "726537bc82134de85fd9a44ef50dd47364ade2d94496282015a4d14be14dacd5"
       define_method(:install) do
         bin.install "molly-discord-relay"
       end
